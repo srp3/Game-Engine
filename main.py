@@ -20,8 +20,8 @@ def load_files():
 
 
 def render(game,current):
-    c = game[current]
-    print("You are at the " + c["name"])
+    c = game[current] 
+    print("You are at the" + c["Start"])
     print(c["desc"])
 
 def get_input():
@@ -48,7 +48,7 @@ def main():
         render(game,current)
 
         for e in end_game:
-            if current == e:
+            if current == e: 
                 print("You win!")
                 break #break out of the while loop
 

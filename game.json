@@ -1,20 +1,89 @@
 {
-	"START": {
-		"name": "",
-		"desc": "",
+	"Room1": {
+		"name": "Room1",
+		"desc": "this is the room you start the game in",
 		"exits": [
 			{
-				"exit": "EXIT1",
-				"target": "LOCATION2"
+				"exit": "EXIT",
+				"target": "Room2"
 			}
 		]
 	}
-	,"LOCATION2": {
-		"name": "",
-		"desc": "",
+	,"Room2": {
+		"name": "Room2",
+		"desc": "This is the second room.",
 		"exits": [
 			{
-				"exit": "EXIT1",
+				"exit": "EXIT",
+				"target": "Room3"
+			}
+		]
+	}
+	,"Room3": {
+		"name": "Room3",
+		"desc": "This is the third room.",
+		"exits": [
+			{
+				"exit": "EXIT",
+				"target": "Room4"
+			}
+		]
+	}
+	,"Room4": {
+		"name": "Room4",
+		"desc": "This is the fourth room.",
+		"exits": [
+			{
+				"exit": "EXIT",
+				"target": "Room5"
+			}
+		]
+	}
+	,"Room5": {
+		"name": "Room5",
+		"desc": "This is the 5th room.",
+		"exits": [
+			{
+				"exit": "EXIT",
+				"target": "Room6"
+			}
+		]
+	}
+	,"Room6": {
+		"name": "Room6",
+		"desc": "This is the 6th room.",
+		"exits": [
+			{
+				"exit": "EXIT",
+				"target": "Room7"
+			}
+		]
+	}
+	,"Room7": {
+		"name": "Room7",
+		"desc": "This is the seventh room.",
+		"exits": [
+			{
+				"exit": "EXIT",
+				"target": "Room8"
+			}
+		]
+	}
+	,"Room8": {
+		"name": "Room8",
+		"desc": "This is the eighth room.",
+		"exits": [
+			{
+				"exit": "EXIT",
+				"target": "Out the house"
+			}
+		]
+	},"Out the house": {
+		"name": "Out the house",
+		"desc": "You have escaped the house.",
+		"exits": [
+			{
+				"exit": "EXIT",
 				"target": "START"
 			}
 		]
