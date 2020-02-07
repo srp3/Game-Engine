@@ -21,7 +21,7 @@ def load_files():
 
 def render(game,current):
     c = game[current] 
-    print("You are at the" + c["Start"])
+    print("You are at the" + c["name"])
     print(c["desc"])
 
 def get_input():
@@ -39,7 +39,7 @@ def update(game,current,response):
 
 # The main function for the game
 def main():
-    current = 'START'  # The starting location
+    current = 'Room1'  # The starting location
     end_game = ['END']  # Any of the end-game locations
 
     game = load_files()
@@ -47,10 +47,9 @@ def main():
     while True:
         render(game,current)
 
-        for e in end_game:
-            if current == e: 
-                print("You win!")
-                break #break out of the while loop
+        if current in end_game:
+         	print("You win!")
+		break #break out of the while loop
 
         response = get_input()
 
